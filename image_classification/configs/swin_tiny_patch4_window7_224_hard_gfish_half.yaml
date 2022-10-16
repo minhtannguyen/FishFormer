@@ -1,0 +1,29 @@
+MODEL:
+  TYPE: swin
+  NAME: swin_tiny_patch4_window7_224_hard_gfish_half
+  DROP_PATH_RATE: 0.2
+  SWIN:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 6, 2 ]
+    NUM_HEADS: [ 3, 6, 12, 24 ]
+    WINDOW_SIZE: 7
+  HDP:
+    # HDP (str): whether to use HDP / which type to use, default='' meaning not using
+    HDP: 'qk'
+    # HDP_RATIOS (list of int/float): how much to scale down hdp head count | only edit the first number
+    HDP_RATIOS: [2, 1]
+    # STAGES (list of int): the stages to apply hdp to
+    STAGES: [2, 3]
+    # NON_LINEAR (bool): whether to use ReLU and multi HDP layers
+    NON_LINEAR: True
+DATA:
+  # BATCH_SIZE (int): default=128
+  BATCH_SIZE: 128
+TRAIN:
+  # lr is for ebs=512, will scale linearly
+  # default: warmup_lr (5e-7) -> base_lr (5e-4) -> min_lr (5e-6)
+  WARMUP_LR: 5e-7
+  BASE_LR: 5e-4
+  MIN_LR: 5e-6
+  # WARMUP_EPOCHS (int): default=20
+  WARMUP_EPOCHS: 20

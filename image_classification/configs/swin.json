@@ -1,0 +1,161 @@
+{
+    "swin_tiny_patch4_window14_224": {
+        "img_size": 224,
+        "embed_dim": 96,
+        "patch_size": 4,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 14,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch4_window7_224_d192": {
+        "img_size": 224,
+        "embed_dim": 192,
+        "patch_size": 4,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch4_window7_224_d384": {
+        "img_size": 224,
+        "embed_dim": 384,
+        "patch_size": 4,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch4_window7_224_d768": {
+        "img_size": 224,
+        "embed_dim": 768,
+        "patch_size": 4,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch4_window7_224": {
+        "img_size": 224,
+        "embed_dim": 96,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch2_window7_224": {
+        "img_size": 224,
+        "embed_dim": 96,
+        "patch_size": 2,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch4_window7_448": {
+        "img_size": 448,
+        "embed_dim": 96,
+        "patch_size": 4,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    },
+    "swin_tiny_patch4_window7_672": {
+        "img_size": 672,
+        "embed_dim": 96,
+        "patch_size": 4,
+        "depths": [
+            2,
+            2,
+            6,
+            2
+        ],
+        "num_heads": [
+            3,
+            6,
+            12,
+            24
+        ],
+        "window_size": 7,
+        "drop_path_rate": 0.2,
+        "crop": false
+    }
+}
